@@ -4,22 +4,93 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portifólio</title>
+    <style>
+        body{
+            background-color: #50b8d5;
+        }
+
+        .center{
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        h1{
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .minha-foto{
+            text-align: center;
+        }
+
+        .minha-foto img{
+            border-radius: 150px;
+            text-align: center; 
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .sobre-mim{
+            text-align: center;
+        }
+
+        .sobre-mim p{
+            font-size: 24px;
+        }
+
+        .habilidades{
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .habilidades p{
+            text-align: center;
+        }
+
+        .habilidades ol{
+            width: 400px;
+            font-size: 19px;
+        }
+
+        .habilidades li{
+            
+        }
+        
+        .links{
+            text-align: center;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 18px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Gabriel Kelvin Freitas</h1>
-    <img src="images/minhafoto.jpg" width="400px" alt="Foto de Gabriel Freitas">
-    <p><i>Olá meu nome é Gabriel, sou de Cotia - SP, tenho 19 anos e gosto muito de programar :)</i></p>
-    <p>Minhas habilidades:</p>
-    <ol>
-        <li>Sou organizado com rotina e tarefas</li>
-        <li><strong>Sou diciplinado</strong></li>
-        <li>Tenho facilidade com computador</li>
-        <li>Tenho um bom autoconhecimento</li>
-    </ol>
+    <div class="center">
+        <h1>Gabriel Kelvin Freitas</h1>
+        <div class="minha-foto">
+             <img src="images/minhafoto.jpg" alt="Foto de Gabriel Freitas">
+        </div><!--minha-foto-->
+        <div class="sobre-mim">
+            <p><i>Olá meu nome é <strong>Gabriel</strong>, sou de <strong>Cotia - SP</strong>, tenho 19 anos e gosto muito de programar :)</i></p>
+        </div><!--sobre-mim-->
+        <div class="habilidades">
+        <p>Minhas habilidades:</p>
+        <ol>
+            <li>Sou organizado com rotina e tarefas</li>
+            <li><strong>Sou diciplinado</strong></li>
+            <li>Tenho facilidade com computador</li>
+            <li>Tenho um bom autoconhecimento</li>
+        </ol>
+    </div><!--habilidades-->
 
-    <a href="../images/minhafoto.jpg">Minha foto</a>
-    <a href="" target="_blank">Blog que eu gosto</a>
-    
+    <div class="links">
+        <a href="https://github.com/gkfreitas" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/gkfreitas/" target="_blank">Linkedin</a>
+    </div><!--links-->
+    </div><!--center-->
 </body>
 </html>
