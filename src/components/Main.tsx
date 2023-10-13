@@ -1,4 +1,6 @@
 import { Poppins } from 'next/font/google'
+import GithubIcon from '../../public/BsGithub.svg'
+import ButtonMain from './ButtonMain'
 const poppinsSemiBold = Poppins({subsets: ['latin'],weight: '600'})
 const poppinsBold = Poppins({subsets: ['latin'],weight: '700'})
 const poppinsMedium = Poppins({subsets: ['latin'],weight: '500'})
@@ -12,6 +14,9 @@ export default function Main() {
       </h1>
       <h1 className={`${poppinsBold.className} text-[32px] dark:text-[#fafafa] text-[#262626]`}>{name}</h1>
       <p className={`mt-[20px] font-[18px] ${poppinsMedium.className} text-[#262626] dark:text-[#fff]`}><span className='dark:text-[#DDD6FE] text-[#5B21B6]'>Desenvolvedor Full Stack</span> (Typescript, ReactJS, NodeJS e Python). Estou disponível para criação de aplicações web completas (Front End &  Back End) ou simples e também para <span className='dark:text-[#A78BFA] text-[#4C1D95]'>oportunidades de contratação.</span></p>
+      <div>
+        <ButtonMain link='https://github.com/gkfreitas' backgroundColor='#DDD6FE' border={false} icon={true} iconSrc={GithubIcon} aditionalIcon={false} aditionalIconSrc={GithubIcon} text='' paddingX='10' paddingY='10' alt='icone github'/>
+      </div>
     </div>
   )
 }
