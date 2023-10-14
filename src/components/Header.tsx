@@ -9,7 +9,7 @@ import { ThemeImage } from './theme-image'
 const poppins = Poppins({subsets: ['latin'],weight: '700'})
 export default function Header() {
   
-  const [menuDisplay, showMenu] = useState(false)
+  const [menuDisplay, showMenu] = useState(true)
   const links = ['Home', 'Serviços', 'Projetos', 'Contato']
 
   return (
