@@ -3,6 +3,7 @@
 import Header from '@/components/Header'
 import Main from '@/components/Main'
 import NextSection from '@/components/NextSection'
+import Projects from '@/components/Projects'
 import Services from '@/components/Services'
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
       <Main />
       <NextSection sectionName='Serviços' scrollFunction={() => console.log('Scroll para serviços')}/>
       <Services />
+      <NextSection sectionName='Projetos' scrollFunction={() => console.log('Scroll para Projetos')}/>
+      <Projects />
     </div>
   )
 }
