@@ -14,7 +14,7 @@ export default function Services() {
 
   const descriptionWebScraping = 'Ultilizando Python eu posso coletar conteúdo e dados da internet, e então manipulá-los e analisá-los conforme necessário.'
   return (
-    <div>
+    <div className=''>
       <ServiceCard iconDark={DevIcon}  iconLight={DevIconLight} alt='Icone ilustrando um codigo' title='Desenvolvimento Web' borderColor='dark:border-[#F5F5F5] border-[#D4D4D4]' description={descriptionDev} titleColor='dark:text-[#A78BFA] text-[#6D28D9]'/> 
       <ServiceCard iconDark={BackendIcon} alt='Icone ilustrando o que seria o backend' title='Back End' borderColor='border-[#8B5CF6]' description={descriptionBackEnd} titleColor='dark:text-[#F5F5F5] text-[#262626]' iconLight={BackEndIconLight}/>
       <ServiceCard iconDark={PythonIcon} alt='Icone ilustrando python' title='Web Scraping' borderColor='dark:border-[#F5F5F5] border-[#D4D4D4]' description={descriptionWebScraping} titleColor='dark:text-[#A78BFA] text-[#6D28D9]' iconLight={PythonIconLight}/>
