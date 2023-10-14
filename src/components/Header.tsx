@@ -9,12 +9,12 @@ import { ThemeImage } from './theme-image'
 const poppins = Poppins({subsets: ['latin'],weight: '700'})
 export default function Header() {
   
-  const [menuDisplay, showMenu] = useState(false)
+  const [menuDisplay, showMenu] = useState(true)
   const links = ['Home', 'Serviços', 'Projetos', 'Contato']
 
   return (
     <div>
-      <div className='flex justify-between m-[25px] sm:m-[50px] items-center duration-200'>
+      <div className='flex justify-between m-[25px] sm:m-[50px] items-center'>
       <div className='cursor-pointer'>
         <div className={`${poppins.className} dark:hover:text-[#C4B5FD] duration-200 hover:text-[#7C3AED] text-[48px] text-[#262626] dark:text-white`}>gk<span className={`${poppins.className} text-[32px] text-[#7C3AED]`}>.</span></div>
       </div>
