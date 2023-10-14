@@ -2,6 +2,8 @@ import Image, { ImageProps, StaticImageData } from 'next/image'
 import styles from './theme-image.module.css'
  
 type Props = Omit<ImageProps, 'src' | 'priority' | 'loading'> & {
+  height?: number
+  width?: number
   className?: string
   srcLight: StaticImageData
   srcDark: StaticImageData
@@ -13,8 +15,8 @@ export const ThemeImage = (props: Props) => {
  
   return (
     <>
-      <Image {...rest} src={srcLight} className={`${styles.imgLight} cursor-pointer ${className}`} alt={props.alt}/>
-      <Image {...rest} src={srcDark} className={`${styles.imgDark} cursor-pointer ${className}`} alt={props.alt}/>
+      <Image {...rest} src={srcLight} height={props.height} width={props.width} className={`${styles.imgLight} cursor-pointer ${className}`} alt={props.alt}/>
+      <Image {...rest} src={srcDark} height={props.height} width={props.width} className={`${styles.imgDark} cursor-pointer ${className}`} alt={props.alt}/>
     </>
   )
 }
