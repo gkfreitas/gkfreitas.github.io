@@ -12,7 +12,7 @@ type PropsButton = {
 export default function ButtonMain(props: PropsButton) {
   return (
     <Link href={props.link} target='_blank'>
-      <button className={`mt-[30px] py-[10px] px-[10px] dark:bg-[#DDD6FE] bg-[#7C3AED] rounded-[5px] mr-[25px] cursor-pointer`}>
+      <button className={`mt-[30px] py-[10px] px-[10px] dark:bg-[#DDD6FE] bg-[#7C3AED] rounded-[5px] mr-[25px] cursor-pointer border hover:border-[#4C1D95]`}>
           {<Image src={props.icon} alt={props.alt} />}
       </button>
     </Link>

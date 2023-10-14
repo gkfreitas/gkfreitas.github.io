@@ -32,8 +32,8 @@ export default function Main() {
         <div className='flex'>
           <ButtonMain link='https://github.com/gkfreitas' icon={GithubIcon} alt='icone github'/>
           <ButtonMain link='https://www.linkedin.com/in/gkfreitas/' icon={LinkedinIcon} alt='icone github'/>
-          <OtherButton handleFunction={() => 'oi'} iconDark={eyeIconDark} iconLight={eyeIconLight} alt='Icone de um olho' text='Projetos' className='hidden sm:flex mr-[25px] ' height={20} width={20}/>
-          <OtherButton handleFunction={handleDownload} iconDark={DownloadIcon} iconLight={DownloadIconLight} alt='Icone de download' text='Download CV' className='h-[40px]' height={20} width={20}/>
+          <OtherButton handleFunction={() => 'oi'} iconDark={eyeIconDark} iconLight={eyeIconLight} alt='Icone de um olho' text='Projetos' className='hidden sm:flex mr-[25px] tracking-wider' height={20} width={20}/>
+          <OtherButton handleFunction={handleDownload} iconDark={DownloadIcon} iconLight={DownloadIconLight} alt='Icone de download' text='Download CV' className='tracking-wider' height={20} width={20}/>
         </div>
       </div>
       <Image src={programming} alt='foto de uma pessoa programando' className='min-w-[300px] hidden lg:block'/>
