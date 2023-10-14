@@ -6,7 +6,7 @@ export default function Projects() {
   const filters = ['Todos','Front End', 'Back End', 'Full Stack']
   const [filter, setFilter] = useState('Todos')
   return (
-    <div className='flex justify-center mt-[40px]'>
+    <div className='flex justify-center mt-[40px] mx-[14px]'>
       {filters.map((name) => (
         <ButtonFilter name={name} setFilter={() => setFilter(name)} key={name} selected={filter == name}/>
       ))}
