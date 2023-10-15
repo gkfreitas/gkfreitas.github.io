@@ -10,7 +10,7 @@ const poppins = Poppins({subsets: ['latin'],weight: '700'})
 export default function Header() {
   
   const [menuDisplay, showMenu] = useState(true)
-  const links = ['Home', 'Serviços', 'Projetos', 'Contato']
+  const links = ['Serviços', 'Projetos', 'Contato']
 
   return (
     <div>
