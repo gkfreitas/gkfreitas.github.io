@@ -1,8 +1,6 @@
-import { Sora } from 'next/font/google'
 import Image, { StaticImageData } from 'next/image'
 import Link from 'next/link'
-
-const soraBold = Sora({subsets: ['latin'],weight: '700'}) 
+import { soraBold } from '../utils/fonts'
 type PropsCard = {
   imagePreview: StaticImageData
   githubLinkCode: string

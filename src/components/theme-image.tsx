@@ -1,5 +1,5 @@
 import Image, { ImageProps, StaticImageData } from 'next/image'
-import styles from './theme-image.module.css'
+import styles from '../styles/theme-image.module.css'
  
 type Props = Omit<ImageProps, 'src' | 'priority' | 'loading'> & {
   height?: number
