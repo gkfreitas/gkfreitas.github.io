@@ -14,11 +14,10 @@ export default function Projects() {
     alt: 'Imagem do projeto',
     liveAppLink: 'https://www.youtube.com/',
     githubLinkCode: 'https://www.youtube.com/',
+    stack: 'full stack'
   }
 
-  const projects = [projectData, projectData, projectData, projectData, projectData, projectData, projectData, projectData, projectData]
-
-  const { imagePreview, name, description, techIcons, alt, liveAppLink, githubLinkCode} = projectData
+  const projects = [projectData, projectData, projectData, projectData, projectData, projectData]
 
   const filters = ['Todos','Front End', 'Back End', 'Full Stack']
   const [filter, setFilter] = useState('Todos')

@@ -1,5 +1,6 @@
 'use client'
 
+import Contact from '@/components/Contact'
 import Header from '@/components/Header'
 import Main from '@/components/Main'
 import NextSection from '@/components/NextSection'
@@ -15,6 +16,7 @@ export default function Home() {
       <Services />
       <NextSection sectionName='Projetos' scrollFunction={() => console.log('Scroll para Projetos')}/>
       <Projects />
+      <Contact />
     </div>
   )
 }
