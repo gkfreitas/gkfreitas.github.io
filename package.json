@@ -2,10 +2,10 @@
   "name": "portifolio-gk",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gkfreitas.github.io/",
+  "homepage": "https://gkfreitas.github.io/gkfreitas.github.io",
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -15,7 +15,8 @@
     "gh-pages": "^6.0.0",
     "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "vite": "^4.4.11"
   },
   "devDependencies": {
     "@types/node": "^20",
