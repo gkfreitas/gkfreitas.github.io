@@ -10,12 +10,12 @@ import Services from '@/components/Services'
 
 export default function Home() {
   return (
-    <div className='max-w-[1280px] mx-auto'>
+    <div className='max-w-[1280px] mx-auto container'>
       <Header/>
       <Main />
-      <NextSection sectionName='Serviços' scrollFunction={() => console.log('Scroll para serviços')}/>
+      <NextSection sectionName='Serviços' />
       <Services />
-      <NextSection sectionName='Projetos' scrollFunction={() => console.log('Scroll para Projetos')}/>
+      <NextSection sectionName='Projetos' />
       <Projects />
       <Contact />
       <Footer/>

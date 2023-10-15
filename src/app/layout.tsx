@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import favicon from './favicon.ico'
 import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,6 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="br">
+      <head>
+        <link rel='icon' href={favicon.src} sizes='any'/>
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )

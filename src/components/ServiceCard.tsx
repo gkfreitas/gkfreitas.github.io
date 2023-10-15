@@ -1,9 +1,7 @@
-import { Poppins } from 'next/font/google';
 import { StaticImageData } from "next/image";
+import { poppinsMedium, poppinsSemiBold } from '../utils/fonts';
 import { ThemeImage } from './theme-image';
 
-const poppinsSemiBold = Poppins({subsets: ['latin'],weight: '600'})
-const poppinsMedium = Poppins({subsets: ['latin'],weight: '500'})
 
 type propsCard = {
   iconDark: StaticImageData
