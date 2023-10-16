@@ -1,3 +1,5 @@
+'use client'
+
 import Image from 'next/image'
 import Link from 'next/link'
 import linkedinLightIcon from '../../public/favicons/linkedinLightIcon.svg'
@@ -5,22 +7,31 @@ import whtasLightIcon from '../../public/favicons/whatsLightIcon.svg'
 import { poppinsBold, poppinsMedium } from '../utils/fonts'
 
 export default function Contact() {
+
+  const returnUrl = () => {
+    if (typeof window !== 'undefined') {
+      return window.location.href
+    }
+  }
+  
   return (
     <div id='contato' className='flex flex-col items-center justify-center  mx-auto px-[24px] xl:flex-row-reverse xl:justify-around'>
       
-      <form action="" className='flex flex-col mt-[16px] w-full max-w-[500px]'>
+      <form action="https://formsubmit.co/gabrielkelvinfreitas@gmail.com" method="POST" className='flex flex-col mt-[16px] w-full max-w-[500px]'>
+        <input type="hidden" name="_next" value={returnUrl()} />
+        <input type="hidden" name='_captcha' value={false as any}/>
       <h1 className={`${poppinsMedium.className} text-[24px] text-center mt-[70px] `}>Vamos nos conhecer</h1>
         <label htmlFor="">
-          <input type="text" name="" id="" placeholder='Nome:' className='w-full mt-[16px] py-[20px] px-[10px] bg-[#404040] rounded-[8px] focus:outline-2 focus:outline-[#5B21B6] focus:outline text-white'/>
+          <input required type="text" name="nome" id="" placeholder='Nome:' className='w-full mt-[16px] py-[20px] px-[10px] bg-[#404040] rounded-[8px] focus:outline-2 focus:outline-[#5B21B6] focus:outline text-white'/>
         </label>
         <label htmlFor="">
-          <input type="text" name="" id="" placeholder='Email:' className='w-full mt-[16px] py-[20px] px-[10px] bg-[#404040] rounded-[8px] border-0 focus:outline-2 focus:outline-[#5B21B6] focus:outline text-white'/>
+          <input required type="email" name="email"  id="" placeholder='Email:' className='w-full mt-[16px] py-[20px] px-[10px] bg-[#404040] rounded-[8px] border-0 focus:outline-2 focus:outline-[#5B21B6] focus:outline text-white'/>
         </label>
         <label htmlFor="">
-          <textarea placeholder='Mensagem:' className='w-full resize-none mt-[16px] py-[20px] px-[10px] bg-[#404040] rounded-[8px] border-0 focus:outline-2 focus:outline-[#5B21B6] focus:outline text-white'></textarea>
+          <textarea name='message' required placeholder='Mensagem:' className='w-full resize-none mt-[16px] py-[20px] px-[10px] bg-[#404040] rounded-[8px] border-0 focus:outline-2 focus:outline-[#5B21B6] focus:outline text-white'></textarea>
         </label>
         <div>
-        <button className='mt-[16px] bg-[#A78BFA] py-[10px] px-[20px] rounded-[8px] uppercase font-bold text-[14px]'>Enviar</button>
+        <button type='submit' className='mt-[16px] bg-[#A78BFA] py-[10px] px-[20px] rounded-[8px] uppercase font-bold text-[14px]'>Enviar</button>
         </div>
       </form>
       <div className='hidden xl:block'>
