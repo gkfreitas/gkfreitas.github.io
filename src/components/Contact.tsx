@@ -28,7 +28,7 @@ export default function Contact() {
           <input required type="email" name="email"  id="" placeholder='Email:' className='w-full mt-[16px] py-[20px] px-[10px] bg-[#404040] rounded-[8px] border-0 focus:outline-2 focus:outline-[#5B21B6] focus:outline text-white'/>
         </label>
         <label htmlFor="">
-          <textarea name='message' required placeholder='Mensagem:' className='w-full resize-none mt-[16px] py-[20px] px-[10px] bg-[#404040] rounded-[8px] border-0 focus:outline-2 focus:outline-[#5B21B6] focus:outline text-white'></textarea>
+          <textarea name='message' required placeholder='Mensagem:' className='w-full resize-none mt-[16px] py-[10px] h-[150px] px-[10px] bg-[#404040] rounded-[8px] border-0 focus:outline-2 focus:outline-[#5B21B6] focus:outline text-white'></textarea>
         </label>
         <div>
         <button type='submit' className='mt-[16px] bg-[#A78BFA] py-[10px] px-[20px] rounded-[8px] uppercase font-bold text-[14px]'>Enviar</button>
