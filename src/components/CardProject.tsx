@@ -17,8 +17,11 @@ export default function CardProject(props: PropsCard) {
 
   
   return (
-    <div className=' border-[1px] border-[#525252] flex flex-col mt-[24px] w-[345px]'>
-      <Image src={imagePreview} alt={alt} className='w-[345px]  object-contain '/>
+    <div className=' border-[1px] border-[#525252] flex flex-col mt-[24px] w-[500px]'>
+      <Link href={liveAppLink} target='_blank'>
+      <Image src={imagePreview} alt={alt} className=' brightness-50 hover:brightness-100 cursor-pointer duration-200' />
+          </Link>
+        
       <div className='py-[24px] px-[16px]'>
         <h1 className={`${soraBold.className}`}>{name} - <span className='text-[12px] text-slate-500'>{stack}</span></h1>
         <p className='mt-[16px] font-[16px] text-[#262626] dark:text-[#E5E5E5] flex flex-wrap'>{description}</p>

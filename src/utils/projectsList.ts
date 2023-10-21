@@ -1,9 +1,10 @@
+import javascriptIcon from '../../public/favicons/techIcons/javascript-js.svg'
 import nextJsIcon from '../../public/favicons/techIcons/next-js.svg'
 import reactIcon from '../../public/favicons/techIcons/react.svg'
 import tailwindIcon from '../../public/favicons/techIcons/tailwind-css.svg'
 import typescriptIcon from '../../public/favicons/techIcons/typescript.png'
-
-import portifiolioPreview from '../../public/preview/PreviewPortifolio.png'
+import portifiolioPreview from '../../public/preview/PortifolioMain.png'
+import trybeWalletPreview from '../../public/preview/TrybeWallet-wallet.png'
 
 const portifolio = {
   imagePreview: portifiolioPreview,
@@ -16,4 +17,15 @@ const portifolio = {
   stack: 'Front End',
 }
 
-export const projetcs = [portifolio]
+const trybeWallet = {
+  imagePreview: trybeWalletPreview,
+  githubLinkCode: 'https://github.com/gkfreitas/trybewallet/',
+  liveAppLink: 'https://gkfreitas.github.io/trybewallet',
+  alt: 'Preview do site do meu projeto TrybeWallet',
+  name: 'TrybeWallet',
+  description: 'TrybeWallet é um site feito para registro de suas despesas diárias internacionais',
+  techIcons: [reactIcon, tailwindIcon, javascriptIcon],
+  stack: 'Front End',
+}
+
+export const projetcs = [trybeWallet]
